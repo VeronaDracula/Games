@@ -25,11 +25,11 @@ def player_input(p_t, m):
                 if board[p_a - 1] != 'X' and board[p_a - 1] != 'O':
                     board[p_a - 1] = p_t
                     print(draw_board(board))
-                    s = 0
+                    sum = 0
                     for j in number:
                         if int(j) not in board:
-                            s += 1
-                    if s == 9:
+                            sum += 1
+                    if sum == 9:
                         result = 'Ничья'
                         print('Ничья')
                         break
